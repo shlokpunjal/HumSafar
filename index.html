@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HumSafar – Where to begin in India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Yatra+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor-dot"></div><div class="cursor-ring"></div>
+
+<header class="nav">
+  <a class="logo" href="#top">HumSafar</a>
+  <nav>
+    <a href="#top-sites">Top sites</a>
+    <a href="#unesco">UNESCO</a>
+    <a href="#more">More places</a>
+    <a href="#trip" class="trip-link">My Trip <span id="badge">0</span></a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <span class="shape s1" data-depth="40"></span>
+    <span class="shape s2" data-depth="-30"></span>
+    <span class="shape s3" data-depth="60"></span>
+    <div class="hero-inner">
+      <p class="eyebrow">स्वागतम्, traveller</p>
+      <h1>Not sure where to begin in India? Begin here.</h1>
+      <p class="sub">Browse well-loved destinations and World Heritage sites, save the ones you like, and see a rough cost for your trip.</p>
+      <a class="btn" href="#top-sites">Plan my trip</a>
+    </div>
+  </section>
+
+  <section id="top-sites" class="sec">
+    <h2>Top destinations</h2>
+    <p class="lead">Eight places first-time visitors ask about most.</p>
+    <div class="grid" id="gTop"></div>
+  </section>
+
+  <section id="unesco" class="sec alt">
+    <h2>UNESCO World Heritage sites</h2>
+    <p class="lead">Six places recognised by UNESCO for their cultural value.</p>
+    <div class="grid" id="gUnesco"></div>
+  </section>
+
+  <section id="more" class="sec">
+    <h2>More places to explore</h2>
+    <p class="lead">Quieter stops to add once the big names are covered.</p>
+    <ul class="list" id="gMore"></ul>
+  </section>
+
+  <section id="trip" class="sec alt">
+    <h2>My Trip</h2>
+    <p class="lead">Tap the heart on any place to save it here.</p>
+    <ul class="trip-list" id="tripList"></ul>
+    <p class="total" id="total"></p>
+    <button class="btn" id="req" type="button">Request this trip</button>
+    <p class="msg" id="msg" role="status"></p>
+  </section>
+</main>
+
+<footer>
+  <p class="logo">HumSafar</p>
+  <p>Your companion for travelling India. Costs are sample estimates per person per day. Photos from Wikipedia and Wikimedia Commons.</p>
+  <svg class="warli" aria-hidden="true">
+    <defs>
+      <pattern id="warli-chain" width="60" height="72" patternUnits="userSpaceOnUse">
+        <g fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="30" cy="9" r="5"/>
+          <path d="M20 17h20L30 34z"/>
+          <path d="M21 51h18L30 34z"/>
+          <path fill="none" d="M21 19L0 28M39 19l21 9M25 51l-7 19M35 51l7 19"/>
+        </g>
+      </pattern>
+    </defs>
+    <rect width="100%" height="72" fill="url(#warli-chain)"/>
+  </svg>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
